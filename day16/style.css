@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Public+Sans:ital,wght@0,100;0,200;0,600;0,700;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: public sans,sans-serif;
+}
+.wrapper>.moblogo{
+    display: flex;
+    align-items: center;
+    padding: .5rem;
+    justify-content: center;
+    background-color: black;
+    display: none;
+    
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.884);
+    color: #fff;
+    padding: .5rem;
+}
+.nav>a{
+    color: #fff;
+    text-decoration: none;
+    font-size: .8rem;
+}
+@media(max-width:430px){
+    .nav{
+        display: none;
+    }
+    .wrapper>.moblogo{
+        display: flex;
+    }
+    
+}
+.herosec{
+    background-image: url(./images/hero_iphone15pro__i70z9oz3hj2i_mediumtall_2x.jpg);
+    width: 100%;
+    height: 92vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 5rem;
+}
+
+.herohead{
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    gap: 10px;
+    align-items: center;
+
+}
+.herohead>h1{
+    font-size: 4rem;
+    color: whitesmoke;
+}
+.herohead>p{
+    font-size: 2rem;
+    color: #fff;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+    margin-top: 1%;
+    /* align-items: center; */
+}
+.links>a{
+    text-decoration: none;
+    font-size: 1.3rem;
+    color: rgb(11, 158, 216);
+    transition: all .2s ease-in-out;
+}
+.links>a:hover{
+    color: #525352;
+}
+
+
+.herosec2{
+    background-image: url(./images/hero_iphone15_announce__uuemlcwczn6u_mediumtall_2x.jpg);
+    width: 100%;
+    height: 92vh;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-top: 5rem;
+}
+.herohd2>h1,p{
+    color: black;
+
+}
+.herohd2>p{
+    font-size: 1.5rem;
+    color: rgb(36, 35, 35);
+    font-weight: 600;
+}
+
+.herosec3{
+    margin-top: 1%;
+    position: relative;
+}
+.herosec3>video{
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;    
+}
+.herosec3>.Watchsec{
+    position: absolute;
+    top: 60%;
+    left: 25%;
+    align-items: center;
+    text-align: center;
+}
+.Watchsec>p{
+    color: #fff;
+    font-size: 2rem;
+}
+.buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+   
+}
+.Watchsec>.buttons button{
+    padding: .5rem 1rem;
+    border-radius: 50px;
+    border: none;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    z-index: 10;
+   
+}
+.Watchsec>.buttons button::before{
+    content: " ";
+    width: 0%;
+    height: 100%;
+    background-color: rgb(147, 145, 145);
+    position:absolute;
+    top: 0;
+    left: 0;
+    border-radius: 50px;
+    transition: all .5s ease-in-out;
+
+}
+.Watchsec>.buttons button:hover::before{
+    width: 100%;
+    z-index: -2;
+    
+
+}
+@media(max-width:430px){
+    .herohead>h1{
+        font-size: 2.5rem;
+    }
+    .herohead>p{
+        font-size: 1.2rem;
+    }
+    .links>a{
+        font-size: 1rem;
+    }
+    .Watchsec>img{
+        width: 100px;
+
+    }
+    .herosec3>.Watchsec{
+        top: 15%;
+        left: 0%;
+        padding: .8rem;
+
+    }
+    .Watchsec>p{
+        font-size: 1.5rem;
+    }
+    .Watchsec>.buttons button{
+        font-size: .9rem;
+    }
+}
+@media(max-width:350px){
+    .herohead>h1{
+        font-size: 2rem;
+
+    }
+    .herohead>p{
+        font-size: 1rem;
+    }
+   .herosec3>.Watchsec{
+    top: 10%;
+    padding: .2rem;
+   }
+   .Watchsec>p{
+    font-size: 1rem;
+   }
+}
